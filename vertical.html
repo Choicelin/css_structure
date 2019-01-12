@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .lh {
+      height: 30px;
+      line-height: 30px;
+      border: 1px solid red;
+    }
+    .fac {
+      display: flex;
+      align-items: center;
+      height: 30px;
+      border: 1px solid blue;
+    }
+    .container {
+      position: relative;
+      height: 30px;
+      border: 1px solid deeppink;
+    }
+    .ptc {
+      position: absolute;
+      top: 50%;
+      transform: translate3d(0, -50%, 0);
+    }
+  </style>
+</head>
+<body>
+  <!-- text line-height -->
+  <p class="lh">没事看看后端，说不定以后会用上</p>
+  <!-- flex -->
+  <p class="fac">php是最好的语言，鸟哥是最强的php程序员</p>
+  <!-- position -->
+  <article class="container">
+    <p class="ptc">java收费，未来难说</p>
+  </article>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .tc {
+      text-align: center;
+    }
+    .draw {
+      width: 30px;
+      height: 30px;
+    }
+    .container {
+      position: relative;
+      padding-bottom: 30px;
+    }
+    .plc {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 120px;
+      text-align: center;
+    }
+    .plc2 {
+      position: absolute;
+      left: 50%;
+      transform: translate3d(-50%, 0, 0);
+    }
+    .fcc {
+      display: flex;
+      justify-content: center;
+    }
+    .fighting {
+      width: 120px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- inline inline-block -->
+  <article class="tc">
+    <span>center</span>
+  </article>
+  <div class="tc">
+    <img class="draw" src="./yourjobthecentralpark.png" alt="">
+  </div>
+  <!-- position -->
+  <div class="container">
+    <p class="plc">我是水平的中心</p>
+  </div>
+  <div class="container">
+    <p class="plc2">我是水平的中心</p>
+  </div>
+  <!-- flex -->
+  <article class="fcc">
+    <p>你们好，我是篮球少年，小林同学</p>
+  </article>
+  <!-- margin -->
+  <p class="fighting tc">加油，小林</p>
+</body>
+</html>
