@@ -3,8 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .clearfix::after,
+    .clearfix::before {
+      content: "";
+      display: table;
+    }
+    .clearfix::after {
+      clear: both;
+    }
+    .left {
+      width: 20%;
+      float: left;
+      background: red;
+    }
+
+    .center {
+      margin: 0 20%;
+      background: deeppink;
+    }
+
+    .right {
+      width: 20%;
+      float: right;
+      background: blue;
+    }
+    .footer {
+      border: 1px solid red;
+    }
+  </style>
 </head>
 <body>
-
+<main class="container clearfix">
+  <section class="left">
+    <p>lzx</p>
+  </section>
+  <article class="center">
+    <p>I love you, looking for my be'shirt</p>
+  </article>
+  <section class="right">
+    <p>hello</p>
+    <p>world</p>
+  </section>
+</main>
+<footer class="footer">test</footer>
 </body>
 </html>
